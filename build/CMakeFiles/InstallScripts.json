@@ -1,0 +1,8 @@
+{
+	"InstallScripts" : 
+	[
+		"/mnt/share/dev/lib-dev/cindernet/build/cmake_install.cmake",
+		"/mnt/share/dev/lib-dev/cindernet/build/slib/xentorch/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

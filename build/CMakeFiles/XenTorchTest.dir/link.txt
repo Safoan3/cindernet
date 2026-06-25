@@ -1,0 +1,1 @@
+/usr/sbin/c++ -O3 -march=native -mtune=native -DNDEBUG -Wl,--dependency-file=CMakeFiles/XenTorchTest.dir/link.d CMakeFiles/XenTorchTest.dir/src/neuralnet.cpp.o CMakeFiles/XenTorchTest.dir/src/test.cpp.o -o XenTorchTest  slib/xentorch/libxentorch.a
