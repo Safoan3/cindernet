@@ -1,0 +1,2 @@
+/usr/sbin/ar qc libxentorch.a CMakeFiles/xentorch.dir/src/source.cpp.o
+/usr/sbin/ranlib libxentorch.a

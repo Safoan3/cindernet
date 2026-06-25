@@ -1,0 +1,3 @@
+/mnt/share/dev/lib-dev/cindernet/slib/xentorch/build/CMakeFiles/xentorch.dir
+/mnt/share/dev/lib-dev/cindernet/slib/xentorch/build/CMakeFiles/edit_cache.dir
+/mnt/share/dev/lib-dev/cindernet/slib/xentorch/build/CMakeFiles/rebuild_cache.dir

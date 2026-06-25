@@ -1,0 +1,31 @@
+# .clangd configuration file for a CUDA project
+
+# If the file path matches a .cu file, apply these rules
+If:
+  PathMatch: .*\.cu
+
+# These flags will be sent to clangd when analyzing .cu files
+CompileFlags:
+  # Remove flags that can confuse clangd or are specific to nvcc
+  Remove:
+    - -forward-unknown-to-host-compiler
+    - --generate-code*
+    - -rdc=true
+    - -D__CUDA_ARCH__=*
+    - -D__CUDA_ARCH_LIST__=*
+
+  # Add flags that tell clangd to behave like nvcc
+  Add:
+    # Treat the file as a CUDA source file
+    - -xcuda
+
+    # Point to your CUDA toolkit installation (ADJUST THIS PATH)
+    - --cuda-path=/usr/local/cuda
+    # Add the CUDA include directory directly
+    - -I/usr/local/cuda/include
+
+    # Specify the standard C++ version your project uses
+    - -std=c++17
+
+    # Target the compute capability of your GPU (e.g., 75 for Tesla T4 in Colab)
+    - --cuda-gpu-arch=sm_75
